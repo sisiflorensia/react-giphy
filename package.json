@@ -1,6 +1,5 @@
 {
   "license": "UNLICENSED",
-  "homepage": "http://sisiflorensia.github.io/giphy-react",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.1.6",
@@ -36,7 +35,6 @@
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "lint": "eslint './src/**/*.js*'",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "webpack -p && gh-pages -d dist"
   }
 }
