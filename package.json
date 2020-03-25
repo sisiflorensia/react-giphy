@@ -37,7 +37,6 @@
     "start": "webpack-dev-server --mode development",
     "lint": "eslint './src/**/*.js*'",
     "predeploy": "npm run build",
-    // "deploy": "gh-pages -d build",
     "deploy": "webpack -p && gh-pages -d build"
   }
 }
