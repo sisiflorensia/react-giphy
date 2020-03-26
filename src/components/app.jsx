@@ -5,7 +5,8 @@ import SearchBar from './search_bar';
 import Gif from './gif';
 import GifList from './gif_list';
 
-const giphy = require("giphy-api")("uC1XUEawBLuXazffEIvNCUBkz0PXCj5T", {
+const giphy = require("giphy-api")({
+  apiKey: "uC1XUEawBLuXazffEIvNCUBkz0PXCj5T",
   https: true
 });
 
